@@ -1,4 +1,4 @@
-local iterator, err = ngx.re.match("index.html", [[(index.html)]], "i")
+local iterator, err = ngx.re.match("index.html", [[(index\.html)]], "i")
 local m, err = ngx.re.match("hello, 1234", "([0-9])[0-9]+")
 ngx.say(m[1])
 ngx.say(iterator)
