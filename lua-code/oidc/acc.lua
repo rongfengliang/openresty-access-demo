@@ -6,6 +6,6 @@
     @return: nil
 ]]
 local function demo()
-    ngx.log(ngx.ERR, "my request:"..ngx.var.request_uri)
+    ngx.log(ngx.ERR, "my request:"..ngx.var.request_uri..ngx.var.server_name)
 end
 return demo
